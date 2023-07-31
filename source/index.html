@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>CAT ENERGE</title>
+  <title>CAT ENERGY</title>
 </head>
 
 <body class="page__body">
@@ -41,7 +41,7 @@
     </section>
   </header>
 
-  <main>
+  <main class="main">
     <section class="program">
       <div class="program__container container">
         <h2 class="visually-hidden">Программы питания</h2>
@@ -71,25 +71,82 @@
       </div>
     </section>
     <section class="example">
-      <div class="example__container container">
+      <div class="example__container">
         <h2 class="example__title page-title">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       </div>
-      <div>
-        <div>
-          <p>5 кг</p>
-          <p>снижение веса</p>
+      <div class="example__result">
+        <div class="example__result-block">
+          <p class="example__result-subtitle">5 кг</p>
+          <p class="example__result-text">снижение веса</p>
         </div>
-        <div>
-          <p>60 дней</p>
-          <p>затрачено времени</p>
+        <div class="example__result">
+          <p class="example__result-subtitle">60 дней</p>
+          <p class="example__result-text">затрачено времени</p>
         </div>
       </div>
-      <div>
-        <p>затраты на питание: 15 000 руб.</p>
+      <div class="example__result-expenses">
+        <p class="expenses-text">затраты на питание: 15 000 руб.</p>
+      </div>
+      <div class="slider-container">
+        <div class="view view-after">
+          <img src="#" alt="Толстый кот" />
+        </div>
+        <div class="view view-before">
+          <img src="#" alt="Худой кот" />
+        </div>
+        <div class="dragme">
+          <div class="dragme-circle"></div>
+        </div>
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <section class="footer__map-container map">
+      <h2 class="visually-hidden">Местонахождение.</h2>
+      <div class="map__container container">
+        <h3 class="map__title">приглашаем к сотрудничеству дилеров!</h3>
+        <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="map__iframe-container">
+        <noscript>
+          <a href="#">
+            <img src="#" width="320" height="362" alt="Карта с меткой расположения офиса">
+          </a>
+        </noscript>
+        <div class="map__iframe">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198193!2d30.320472477407485!3d59.93871916209354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690703375686!5m2!1sru!2sru" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="footer__container container">
+      <h2 class="visually-hidden">Ссылки.</h2>
+      <a class="footer__logo" href="#">
+        <img src="#" width="128" height="24" alt="Логотип сайта">
+      </a>
+      <ul class="footer__social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="#" width="28" height="22" alt="Вконтакте">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="#" width="28" height="22" alt="Ютуб">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="#" width="28" height="22" alt="Телеграм">
+          </a>
+        </li>
+      </ul>
+      <a class="footer__logo-htmlacademy" href="https://htmlacademy.ru/">
+        <p class="htmlacademy-text">HTML Academy</p>
+        <img src="#" width="27" height="34" alt="HTML Academy">
+      </a>
+    </section>
+  </footer>
 </body>
 
 </html>
