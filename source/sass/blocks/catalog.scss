@@ -1,0 +1,37 @@
+.catalog__card-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.catalog__card-therm,
+.catalog__card-determination {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $ff-lato;
+  text-align: center;
+}
+
+.catalog__item--more h3 {
+  text-align: center;
+  color: #111111;
+}
+
+.catalog__item--more p {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $ff-lato;
+  text-align: center;
+}
+
+.catalog__item--more a {
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,36 @@
+.example {
+  background-color: #f2f2f2;
+}
+
+.example__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $ff-lato;
+}
+
+.example__result-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.example__result-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: $ff-lato;
+  text-align: center;
+}
+
+.expenses-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}

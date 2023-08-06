@@ -1,0 +1,19 @@
+.present {
+  padding: 172px 20px 26px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $ff-lato;
+  text-align: center;
+  color: $light;
+
+  background-color: #69b738;
+  background-image: url(../img/svg/present.svg),
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url(../img/present-background-mobile.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top 60px center, top, top;
+  background-size: 78px 80px, auto, cover;
+}

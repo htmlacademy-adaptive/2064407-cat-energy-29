@@ -1,0 +1,27 @@
+.more__title-main {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.more__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.more__volume,
+.more__price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $ff-lato;
+  text-align: right;
+}
