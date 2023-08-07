@@ -5,3 +5,36 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .control {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__fieldset--submit {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 32px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .control--check {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .control--radio {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .control--check {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,7 +1,22 @@
 .advantages__item {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
   font-family: $ff-lato;
+}
+
+.advantages__title {
+  line-height: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+  }
 }

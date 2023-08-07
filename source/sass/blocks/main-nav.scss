@@ -7,3 +7,44 @@
   color: #000000;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: grid;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-nav__link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+
+  .main-nav__link {
+    padding-left: 33px;
+
+    font-size: 20px;
+    line-height: normal;
+  }
+}

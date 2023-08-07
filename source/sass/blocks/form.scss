@@ -16,6 +16,10 @@
   text-transform: uppercase;
 }
 
+.form-input {
+  width: 100%;
+}
+
 .form__legend {
   font-style: normal;
   font-weight: 400;
@@ -45,4 +49,27 @@
   font-family: $ff-lato;
   text-align: center;
   color: #000000;
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding: 0 110px;
+  }
+
+  .form__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  .form__group {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .form__fieldset--contacts .form__group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
