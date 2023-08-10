@@ -10,9 +10,9 @@
   color: $light;
 
   background-color: #69b738;
-  background-image: url(../img/svg/present.svg),
+  background-image: url("../img/svg/present.svg"),
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url(../img/present-background-mobile.png);
+    url("../img/present-background-mobile.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: top 60px center, top, top;
   background-size: 78px 80px, auto, cover;
@@ -43,8 +43,10 @@
 @media (min-width: $tablet-width) {
   .present {
     width: 245px;
-    text-align: center;
     padding: 185px 43px 42px 40px;
+
+    text-align: center;
+
     background-position: top 55px center, top, top;
   }
 }
