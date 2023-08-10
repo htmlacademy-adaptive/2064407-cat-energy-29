@@ -6,23 +6,21 @@
   max-width: 320px;
   min-height: 100%;
   margin: 0 auto;
-
-  background-color: $light;
 }
 
 @media (min-width: $tablet-width) {
   .wrapper {
+    width: 100%;
     max-width: $tablet-width;
     margin: 0;
-    width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .wrapper {
+    width: 100%;
     max-width: $desktop-width;
     margin: 0;
-    width: 100%;
   }
 }
 
