@@ -23,18 +23,21 @@
   font-family: $ff-lato;
   text-align: right;
 }
-
-@media (min-width: $tablet-width) {
-  .more__item {
+.more__item {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 200px 100px;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .more__block {
+.more__block {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 245px;
     gap: 80px;
   }
+}
+
+.more__button {
+  font-size: 16px;
+  line-height: 20px;
 }
