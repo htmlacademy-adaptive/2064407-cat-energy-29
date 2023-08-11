@@ -1,46 +1,103 @@
+.program__list {
+  @media (min-width: $desktop-width) {
+    display: grid;
+
+    gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .program__item {
-  background-color: #f2f2f2;
+  margin-bottom: 20px;
+  padding: 21px;
+
+  background-color: $gray;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .program__title {
-  font-style: normal;
+  margin: 10px 0 30px;
+  padding-left: 70px;
+
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  color: #000000;
   text-transform: uppercase;
-}
 
-.program__text {
-  font-style: normal;
-  font-weight: 400;
-  font-family: $ff-lato;
-}
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
 
-.program__link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-@media (min-width: $tablet-width) {
-  .program__title {
     font-size: 36px;
     line-height: 36px;
   }
 
-  .program__link {
-    font-size: 20px;
+  @media (min-width: $desktop-width) {
+    padding-left: 160px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .program__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-  }
+.program__text {
+  margin: 0 0 23px;
+
+  font-family: $ff-lato;
+  color: $dark-gray;
 }
+
+.program__link {
+  padding-right: 48px;
+
+  font-size: 16px;
+  line-height: 16px;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+// .program__item {
+//   background-color: #f2f2f2;
+// }
+
+// .program__title {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 24px;
+//   line-height: 37px;
+//   color: #000000;
+//   text-transform: uppercase;
+// }
+
+// .program__text {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-family: $ff-lato;
+// }
+
+// .program__link {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 16px;
+//   text-align: center;
+//   color: #000000;
+//   text-transform: uppercase;
+// }
+
+// @media (min-width: $tablet-width) {
+//   .program__title {
+//     font-size: 36px;
+//     line-height: 36px;
+//   }
+
+//   .program__link {
+//     font-size: 20px;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .program__list {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     gap: 80px;
+//   }
+// }
