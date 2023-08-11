@@ -1,0 +1,8 @@
+.footer__social {
+  display: grid;
+  justify-content: center;
+  width: 132px;
+
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+}

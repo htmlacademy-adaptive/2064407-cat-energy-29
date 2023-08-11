@@ -1,1 +1,17 @@
+.header__nav {
+  padding-top: 13px;
+}
 
+@media (min-width: $tablet-width) {
+  .header__nav {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    position: relative;
+  }
+}
