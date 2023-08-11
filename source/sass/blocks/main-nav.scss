@@ -6,6 +6,13 @@
 
   grid-template-columns: repeat(2, auto);
 
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    gap: 20px;
+    grid-template-columns: auto 1fr;
+  }
+
   @media (min-width: $desktop-width) {
     position: relative;
 
@@ -26,15 +33,48 @@
   flex-direction: column;
 
   background-color: $light;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    background-color: transparent;
+
+    gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
 }
 
 .main-nav.is-open .main-nav__list {
   display: flex;
 }
 
+.no-js .main-nav__list {
+  position: static;
+
+  display: block;
+}
+
 .main-nav__logo {
   display: block;
   width: 190px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
 }
 
 .main-nav__logo img {
@@ -49,45 +89,25 @@
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav {
-    display: grid;
-
-    gap: 20px;
-    grid-template-columns: auto 1fr;
-  }
-
-  .main-nav__logo {
-    width: 174px;
-  }
-
-  .main-nav__list {
-    position: static;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-
-    background-color: transparent;
-
-    gap: 33px;
-  }
-
-  .main-nav__link {
+  @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
   }
 
-  .main-nav__toggle {
-    display: none;
+  @media (min-width: $desktop-width) {
+    padding-left: 33px;
+
+    font-size: 20px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav__toggle {
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
     position: relative;
 
     width: 24px;
@@ -95,24 +115,10 @@
 
     background-color: $light;
   }
+}
 
-  .main-nav__logo {
-    width: 202px;
-  }
-
-  .main-nav__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-  }
-
-  .main-nav__link {
-    padding-left: 33px;
-
-    font-size: 20px;
-  }
-
-  .header--home .main-nav__link {
+.header--home .main-nav__link {
+  @media (min-width: $desktop-width) {
     color: $light;
   }
 }
