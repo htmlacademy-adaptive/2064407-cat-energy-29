@@ -1,40 +1,74 @@
+.control {
+  display: grid;
+
+  gap: 12px;
+  grid-template-columns: 1fr;
+
+  &--radio {
+    @media (min-width: $tablet-width) {
+      padding: 24px 28px;
+
+      border: 1px solid $gray-border;
+    }
+  }
+
+  &--check {
+    @media (min-width: $tablet-width) {
+      gap: 33px 57px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $desktop-width) {
+      gap: 33px 78px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
 .control__label {
-  font-style: normal;
-  font-weight: 400;
+  padding-left: 15px;
+
   font-size: 16px;
   line-height: 18px;
-  text-transform: uppercase;
+  color: $dark-gray;
 }
+// .control__label {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 18px;
+//   text-transform: uppercase;
+// }
 
-@media (min-width: $tablet-width) {
-  .control {
-    display: flex;
-    flex-direction: column;
-  }
+// @media (min-width: $tablet-width) {
+//   .control {
+//     display: flex;
+//     flex-direction: column;
+//   }
 
-  .form__fieldset--submit {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px 32px;
-  }
-}
+//   .form__fieldset--submit {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 32px 32px;
+//   }
+// }
 
-@media (min-width: $tablet-width) {
-  .control--check {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px 32px;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .control--check {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 32px 32px;
+//   }
+// }
 
-@media (min-width: $desktop-width) {
-  .control--radio {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+// @media (min-width: $desktop-width) {
+//   .control--radio {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//   }
 
-  .control--check {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+//   .control--check {
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//   }
+// }

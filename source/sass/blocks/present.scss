@@ -13,17 +13,13 @@
   background-image: url("../img/svg/present.svg"),
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     url("../img/present-background-mobile.png");
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-repeat: no-repeat;
   background-position: top 60px center, top, top;
   background-size: 78px 80px, auto, cover;
-}
 
-@media (min-width: $tablet-width) {
-  .present {
+  @media (min-width: $tablet-width) {
     padding: 71px 125px 69px 421px;
 
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     font-family: $ff-lato;
@@ -34,14 +30,12 @@
     background-image: url(../img/svg/present.svg),
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       url(../img/present-background-mobile.png);
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-repeat: no-repeat;
     background-position: center left 77px, top, center;
     background-size: 80px 83px, auto, cover;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .present {
+  @media (min-width: $desktop-width) {
     width: 245px;
     padding: 185px 43px 42px 40px;
 

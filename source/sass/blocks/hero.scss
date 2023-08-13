@@ -7,7 +7,7 @@
 }
 
 .hero--home .hero__description {
-  @media (min-width: 1440px) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 53px;
@@ -41,6 +41,27 @@
     color: #000000;
 
     background: none;
+  }
+}
+
+.hero--home::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+
+    background-image: linear-gradient(
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../img/cat-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
   }
 }
 

@@ -1,7 +1,126 @@
 .example {
-  background-color: #f2f2f2;
+  background-color: #eaeaea;
 
-  @media (min-width: );
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(0deg, #eaeaea 42.5%, #ffffff 42.9%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+    background-image: linear-gradient(0deg, #f2f2f2 77%, #ffffff 77%);
+  }
+}
+
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    align-self: start;
+
+    gap: 10px 220px;
+    grid-template-columns: 436px 1fr;
+  }
+}
+
+.example__result {
+  display: grid;
+
+  gap: 20px 32px;
+  grid-template-columns: repeat(2, 124px);
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    padding-top: 37px;
+
+    gap: 33px 42px;
+    grid-template-columns: 162px 162px 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+
+    gap: 20px 42px;
+    grid-template-columns: repeat(2, 162px);
+  }
+}
+
+.example__text {
+  padding-bottom: 26px;
+
+  font-family: $ff-lato;
+  color: $dark-gray;
+}
+
+.example__result-block {
+  position: relative;
+
+  text-align: center;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.example__result-subtitle {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.example__result-text {
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+
+  padding: 0 17px;
+
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $ff-lato;
+  color: $dark-gray;
+
+  background-color: #eaeaea;
+  transform: translateX(-50%);
+}
+
+.example__result-expenses {
+  grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    grid-column: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 40px;
+
+    grid-column: 1/-1;
+  }
+}
+
+.example__result-price {
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 230px;
+    margin-top: 0;
+    margin-left: auto;
+
+    font-size: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+
+    text-align: left;
+  }
 }
 
 // .example {

@@ -1,75 +1,131 @@
-.hero--form .hero__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  text-transform: uppercase;
+.form__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    max-width: 1220px;
+    margin: 0 auto;
+
+    gap: 0 80px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.form__label,
-.form__input {
-  font-style: normal;
-  font-weight: 400;
+.form__fieldset {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1220px;
+  margin: 0 auto;
+
+  border: none;
+}
+
+.form__fieldset--submit {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    align-items: center;
+
+    gap: 20px 65px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form__group {
+  display: grid;
+
+  gap: 14px;
+  grid-template-columns: 1fr;
+}
+
+.form__fieldset--contacts .form__group {
+  @media (min-width: $desktop-width) {
+    display: grid;
+
+    gap: 20px 80px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form__label {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
-.form-input {
+.form__input {
   width: 100%;
+  padding: 11px 20px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $ff-oswald;
+  color: $dark-gray;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 1px solid $gray-border;
 }
 
 .form__legend {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  color: #000000;
-}
-
-.form__fieldset--commit .form-input {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+  margin-bottom: 34px;
 }
 
 .form__submit {
-  font-size: 16px;
-  line-height: 20px;
-}
+  width: 100%;
 
-.form__fieldset--submit p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  font-family: $ff-lato;
-  text-align: center;
-  color: #000000;
-}
-
-@media (min-width: $desktop-width) {
-  .form {
-    padding: 0 110px;
-  }
-
-  .form__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-  }
-
-  .form__group {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .form__fieldset--contacts .form__group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
   }
 }
+// .hero--form .hero__text {
+//   font-size: 14px;
+//   line-height: 18px;
+//   color: #000000;
+//   text-transform: uppercase;
+// }
+
+// .form__label,
+// .form__input {
+//   font-size: 16px;
+//   line-height: 18px;
+//   text-transform: uppercase;
+// }
+
+// .form-input {
+//   width: 100%;
+// }
+
+// .form__legend {
+//   font-size: 24px;
+//   line-height: 26px;
+//   color: #000000;
+// }
+
+// .form__fieldset--commit .form-input {
+//   font-size: 16px;
+//   line-height: 18px;
+//   text-transform: uppercase;
+// }
+
+// .form__submit {
+//   font-size: 16px;
+//   line-height: 20px;
+// }
+
+// .form__fieldset--submit p {
+//   font-size: 14px;
+//   line-height: 16px;
+//   font-family: $ff-lato;
+//   text-align: center;
+//   color: #000000;
+// }
+
+// @media (min-width: $desktop-width) {
+//   .form {
+//     padding: 0 110px;
+//   }
+
+//   .form__container {
+//     display: grid;
+
+//     gap: 80px;
+//     grid-template-columns: 1fr 1fr;
+//   }
