@@ -23,11 +23,29 @@
   }
 }
 
+.more__title-main {
+  font-weight: 400;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 .more__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
   color: #222222;
   text-transform: uppercase;
 
   grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: auto;
@@ -40,11 +58,12 @@
 
 .more__volume,
 .more__price {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 14px;
   font-family: $ff-lato;
+
+  @media (min-width: $tablet-width) {
+    line-height: 20px;
+  }
 }
 
 .more__block {

@@ -1,8 +1,6 @@
 .present {
   padding: 187px 61px 43px 58px;
 
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   font-family: $ff-lato;
@@ -20,11 +18,8 @@
   @media (min-width: $tablet-width) {
     padding: 71px 125px 69px 421px;
 
-    font-size: 16px;
-    line-height: 20px;
     font-family: $ff-lato;
     text-align: left;
-    color: $light;
 
     background-color: #69b738;
     background-image: url(../img/svg/present.svg),

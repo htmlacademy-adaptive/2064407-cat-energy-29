@@ -46,8 +46,11 @@
 
 .form__label {
   font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .form__input {
@@ -62,17 +65,61 @@
 
   background-color: transparent;
   border: 1px solid $gray-border;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .form__legend {
   margin-bottom: 34px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.form__fieldset--commit textarea {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $ff-oswald;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__submit {
   width: 100%;
 
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    padding: 16px;
+
+    font-size: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     min-width: 570px;
+  }
+}
+
+.form__fieldset--submit p {
+  line-height: 16px;
+  font-family: $ff-lato;
+  text-align: center;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
   }
 }
 // .hero--form .hero__text {
