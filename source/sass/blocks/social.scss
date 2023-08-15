@@ -19,6 +19,17 @@
   color: #666666;
 
   fill: currentColor;
+
+  &:hover,
+  &:focus {
+    color: #68b738;
+
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(104, 183, 56, 0.3);
+  }
 }
 
 .footer__logo-htmlacademy {

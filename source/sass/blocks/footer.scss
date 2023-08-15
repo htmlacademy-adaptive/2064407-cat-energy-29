@@ -30,12 +30,52 @@
 
   color: #111111;
 
+  fill: currentColor;
+
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+}
+
+.footer__logo svg {
+  &:hover,
+  &:focus {
+    color: #3e3e3e;
+
+    outline: none;
+  }
+
+  &:active {
+    color: #6b6b6b;
   }
 }
 
 .footer__logo img {
   display: block;
   width: 100%;
+}
+
+.footer__logo-htmlacademy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  fill: currentColor;
+}
+
+.footer__logo-htmlacademy svg {
+  &:hover,
+  &:focus {
+    color: #68b738;
+
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(104, 183, 56, 0.3);
+  }
+}
+
+.htmlacademy-text {
+  padding-right: 23px;
 }

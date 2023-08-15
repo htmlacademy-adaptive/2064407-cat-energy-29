@@ -1,9 +1,3 @@
-.advantages__item {
-  padding-bottom: 26px;
-
-  font-family: $ff-lato;
-}
-
 .advantages__title {
   margin-bottom: 40px;
 }
@@ -12,12 +6,88 @@
   @media (min-width: $tablet-width) {
     display: grid;
 
+    counter-reset: number 0;
+
     gap: 37px 136px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
     gap: 77px;
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.advantages__item {
+  position: relative;
+
+  margin-bottom: 20px;
+  padding: 3px 0 3px 80px;
+
+  font-family: $ff-lato;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 151px 60px 57px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--beneficial::before {
+    background-image: url("/img/svg/sheet.svg");
+  }
+
+  &--powder::before {
+    background-image: url("/img/svg/powder.svg");
+  }
+
+  &--eat::before {
+    background-image: url("/img/svg/cutlery.svg");
+  }
+
+  &--changes::before {
+    background-image: url("/img/svg/scales.svg");
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(number);
+      position: absolute;
+      top: -10px;
+      left: 112px;
+      z-index: -1;
+
+      margin: 0;
+
+      font-size: 280px;
+      line-height: 280px;
+      font-family: $ff-oswald;
+      color: #f2f2f2;
+
+      counter-increment: number;
+    }
   }
 }
