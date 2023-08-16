@@ -1,30 +1,30 @@
 .map__container {
-  background-color: $light;
+  position: relative;
+}
 
-  @media (min-width: $desktop-width) {
-    position: relative;
-  }
+.map--index .map__container {
+  background-color: $light;
 }
 
 .map__address {
   display: grid;
+  padding: 26px 0;
 
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     padding: 60px 70px 59px;
 
     gap: 308px;
-    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 95px;
+    top: 94px;
     z-index: 1;
 
     width: 565px;
+    padding: 61px 80px;
 
     background-color: $light;
 
@@ -33,6 +33,8 @@
 }
 
 .map__title {
+  margin: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -51,20 +53,41 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    text-align: right;
+  }
+}
+
+.map__text span {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 19px;
   }
 }
 
 .map__iframe-container {
+  width: 100%;
+  height: 362px;
+
   @media (min-width: $tablet-width) {
-    height: 362px;
+    height: 400px;
   }
 }
 
-.map__iframe iframe {
-  @media (min-width: $tablet-width) {
-    position: absolute;
+.map__iframe-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
-    width: 100%;
-    height: 362px;
-  }
+.map__iframe {
+  height: 100%;
+}
+
+.map__iframe iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  border: none;
 }

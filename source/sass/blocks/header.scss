@@ -6,12 +6,23 @@
   }
 }
 
-.header__nav {
-  padding-top: 13px;
+.header--home::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
 
-  @media (min-width: $tablet-width) {
-    display: grid;
-
-    grid-template-columns: 1fr 2fr;
+    background-image: linear-gradient(
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../img/cat-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
   }
 }

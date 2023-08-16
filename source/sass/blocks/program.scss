@@ -1,3 +1,15 @@
+.program {
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+  }
+}
+
 .program__list {
   @media (min-width: $desktop-width) {
     display: grid;
@@ -9,13 +21,14 @@
 
 .program__item {
   margin-bottom: 20px;
-  padding: 21px;
+  padding: 20px;
 
   background-color: #f2f2f2;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
-    padding: 77px 316px 57px 52px;
+    padding: 67px 315px 58px 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,7 +36,11 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
-    padding: 77px 30px 59px 53px;
+    padding: 67px 30px 60px 53px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -31,10 +48,10 @@
   background-image: url("/img/svg/slim-cat.svg");
   background-repeat: no-repeat;
   background-position: 20px 21px;
-  background-size: 50px 50px;
+  background-size: 50px 53px;
 
   @media (min-width: $tablet-width) {
-    background-position: top 81px right 62px;
+    background-position: top 81px right 63px;
     background-size: 200px 211px;
   }
 
@@ -51,7 +68,7 @@
   background-size: 67px 50px;
 
   @media (min-width: $tablet-width) {
-    background-position: top 91px right 30px;
+    background-position: top 91px right 29px;
     background-size: 268px 200px;
   }
 
@@ -71,7 +88,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     padding-left: 0;
 
     font-size: 36px;
@@ -79,13 +96,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
     padding-left: 160px;
   }
 }
 
 .program__text {
-  margin: 0 0 15px;
-  padding-bottom: 23px;
+  margin: 0 0 19px;
+  padding-bottom: 21px;
 
   font-size: 14px;
   line-height: 18px;
@@ -95,7 +113,7 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
+    padding-bottom: 31px;
 
     font-size: 16px;
     line-height: 24px;
@@ -103,16 +121,21 @@
 
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 8px;
+  }
 }
 
 .program__link {
   position: relative;
 
+  margin-top: auto;
   padding-right: 48px;
 
   font-size: 16px;
   line-height: 16px;
-  color: #000000;
+  color: inherit;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -123,7 +146,7 @@
     line-height: 30px;
   }
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -134,14 +157,20 @@
 
     background-image: url("/img/svg/arrow.svg");
     background-repeat: no-repeat;
+    background-position: left center;
     background-size: 32px 10px;
     transform: translateY(-50%);
   }
 
-  &:hover::before,
-  &:focus::before {
+  &:hover::after,
+  &:focus::after {
     background-image: url("/img/svg/arrow-focus.svg");
     background-repeat: no-repeat;
+    background-position: left center;
     background-size: 32px 10px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
