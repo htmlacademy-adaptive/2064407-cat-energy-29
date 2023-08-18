@@ -204,6 +204,10 @@
     background-image: none;
     border: 2px solid #f2f2f2;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+  }
 }
 
 .catalog__item--more h3 {
@@ -216,7 +220,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 170px;
-    margin-bottom: 21px;
+    margin: 0 auto 21px;
   }
 
   @media (min-width: $desktop-width) {

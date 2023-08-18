@@ -10,7 +10,7 @@
 
 .hero--home {
   @media (max-width: $mobile-only-width) {
-    padding: 0 0 43px;
+    padding: 0;
   }
 
   @media (max-width: $tablet-width) {
@@ -20,7 +20,7 @@
 
 .hero--home .hero__description {
   @media (max-width: $mobile-only-width) {
-    padding: 0;
+    padding: 0 0 43px;
   }
 
   @media (min-width: $desktop-width) {
