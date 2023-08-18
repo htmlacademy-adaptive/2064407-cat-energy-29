@@ -4,6 +4,10 @@
 
 .map--index .map__container {
   background-color: $light;
+
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .map__address {

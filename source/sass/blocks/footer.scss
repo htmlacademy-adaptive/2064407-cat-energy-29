@@ -42,17 +42,17 @@
   height: 100%;
 
   fill: currentColor;
-}
 
-&:hover,
-&:focus {
-  color: #3e3e3e;
+  &:hover,
+  &:focus {
+    color: #3e3e3e;
 
-  outline: none;
-}
+    outline: none;
+  }
 
-&:active {
-  color: #6b6b6b;
+  &:active {
+    color: #6b6b6b;
+  }
 }
 
 .footer__logo img {

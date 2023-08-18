@@ -20,9 +20,13 @@
         rgba(104, 183, 56, 0.85),
         rgba(104, 183, 56, 0.85)
       ),
-      url("../img/cat-background-desktop.jpg");
+      url("/img/cat-background-desktop.jpg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
   }
+}
+
+.header__container {
+  padding: 0;
 }
