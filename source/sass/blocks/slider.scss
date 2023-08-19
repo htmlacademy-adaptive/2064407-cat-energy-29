@@ -45,13 +45,13 @@
 }
 
 .slider__item--before {
-  z-index: 20;
+  z-index: 10;
 }
 
 .slider__item--after {
   right: 0;
   left: auto;
-  z-index: 10;
+  z-index: 9;
 }
 
 .slider__item--before img {

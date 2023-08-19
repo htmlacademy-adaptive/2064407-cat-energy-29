@@ -180,3 +180,9 @@
     text-align: left;
   }
 }
+
+.example__result-price span {
+  @media (min-width: $desktop-width) {
+    margin-left: 63px;
+  }
+}
