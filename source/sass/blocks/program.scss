@@ -1,3 +1,15 @@
+.program {
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+  }
+}
+
 .program__list {
   @media (min-width: $desktop-width) {
     display: grid;
@@ -9,12 +21,60 @@
 
 .program__item {
   margin-bottom: 20px;
-  padding: 21px;
+  padding: 20px;
 
-  background-color: $gray;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    padding: 67px 315px 58px 52px;
+  }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin: 0;
+    padding: 67px 30px 60px 53px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.program__item--slim {
+  background-image: url("/img/svg/slim-cat.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 21px;
+  background-size: 50px 53px;
+
+  @media (min-width: $tablet-width) {
+    background-position: top 81px right 63px;
+    background-size: 200px 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 52px 41px;
+    background-size: 100px 106px;
+  }
+}
+
+.program__item--pro {
+  background-image: url("/img/svg/big-cat.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 24px;
+  background-size: 67px 50px;
+
+  @media (min-width: $tablet-width) {
+    background-position: top 91px right 29px;
+    background-size: 268px 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 34px 47px;
+    background-size: 134px 100px;
   }
 }
 
@@ -28,6 +88,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
     padding-left: 0;
 
     font-size: 36px;
@@ -35,18 +96,41 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
     padding-left: 160px;
   }
 }
 
 .program__text {
-  margin: 0 0 23px;
+  margin: 0 0 19px;
+  padding-bottom: 21px;
 
+  font-size: 14px;
+  line-height: 18px;
   font-family: $ff-lato;
   color: $dark-gray;
+
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 31px;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 8px;
+  }
 }
 
 .program__link {
+  position: relative;
+
+  margin-top: auto;
   padding-right: 48px;
 
   font-size: 16px;
@@ -54,50 +138,39 @@
   color: inherit;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 57px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    width: 32px;
+    height: 10px;
+
+    background-image: url("/img/svg/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 32px 10px;
+    transform: translateY(-50%);
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-image: url("/img/svg/arrow-focus.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 32px 10px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
-// .program__item {
-//   background-color: #f2f2f2;
-// }
-
-// .program__title {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 24px;
-//   line-height: 37px;
-//   color: #000000;
-//   text-transform: uppercase;
-// }
-
-// .program__text {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: $ff-lato;
-// }
-
-// .program__link {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 16px;
-//   text-align: center;
-//   color: #000000;
-//   text-transform: uppercase;
-// }
-
-// @media (min-width: $tablet-width) {
-//   .program__title {
-//     font-size: 36px;
-//     line-height: 36px;
-//   }
-
-//   .program__link {
-//     font-size: 20px;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .program__list {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     gap: 80px;
-//   }
-// }

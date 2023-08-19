@@ -1,24 +1,123 @@
-.advantages__item {
-  padding-bottom: 26px;
+.advantages {
+  padding-top: 20px;
+  padding-bottom: 49px;
 
-  font-family: $ff-lato;
-  color: $dark-gray;
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 58px;
+
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    padding-bottom: 83px;
+
+    border: none;
+  }
 }
 
 .advantages__title {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
 }
 
 .advantages__list {
   @media (min-width: $tablet-width) {
     display: grid;
 
-    gap: 37px 136px;
-    grid-template-columns: repeat(2, 1fr);
+    counter-reset: number;
+
+    gap: 75px 60px;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 77px;
+    gap: 80px;
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.advantages__item {
+  position: relative;
+
+  margin-bottom: 18px;
+  padding: 5px 0 3px 80px;
+
+  font-family: $ff-lato;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 125px 75px 45px 0;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    counter-increment: number;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--beneficial::before {
+    background-image: url("/img/svg/sheet.svg");
+  }
+
+  &--powder::before {
+    background-image: url("/img/svg/powder.svg");
+  }
+
+  &--eat::before {
+    background-image: url("/img/svg/cutlery.svg");
+  }
+
+  &--changes::before {
+    background-image: url("/img/svg/scales.svg");
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(number);
+      position: absolute;
+      top: -10px;
+      left: 112px;
+      z-index: -1;
+
+      margin: 0;
+
+      font-size: 280px;
+      line-height: 280px;
+      font-family: $ff-oswald;
+      color: #f2f2f2;
+    }
+  }
+}
+
+.advantages__item:last-child {
+  margin-bottom: 0;
 }

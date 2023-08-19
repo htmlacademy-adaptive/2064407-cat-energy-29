@@ -1,43 +1,106 @@
 .more__title-main {
-  font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.more__block {
+  padding-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    align-items: start;
+
+    gap: 30px 80px;
+    grid-template-columns: 1fr auto;
+  }
+}
+
+.more__item {
+  display: grid;
+  padding: 12px 0 19px;
+
+  border-top: 1px solid #cdcdcd;
+
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+
+    border-top: 1px solid #cdcdcd;
+
+    grid-template-columns: 1fr 150px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: baseline;
+    padding: 17px 0 15px;
+
+    gap: 40px;
+    grid-template-columns: 1fr 220px 60px 244px;
+  }
+}
+
+.more__item:last-child {
+  border-bottom: 1px solid $light-gray;
 }
 
 .more__title {
-  font-style: normal;
+  margin: 0;
+
   font-weight: 400;
   font-size: 16px;
+  line-height: 16px;
   color: #222222;
   text-transform: uppercase;
-}
 
-.more__volume,
-.more__price {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  font-family: $ff-lato;
-  text-align: right;
-}
-.more__item {
+  grid-column: 1 / -1;
+
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 200px 100px;
+    margin: 0 0 26px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    grid-column: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
-.more__block {
+
+.more__item p {
+  margin: 0;
+
+  line-height: 14px;
+  font-family: $ff-lato;
+  color: $dark-gray;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: right;
+  }
+
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 245px;
-    gap: 80px;
+    text-align: left;
   }
 }
 
 .more__button {
-  font-size: 16px;
-  line-height: 20px;
+  grid-column: 1 / -1;
+
+  @media (min-width: $desktop-width) {
+    grid-column: auto;
+  }
 }
