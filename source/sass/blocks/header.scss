@@ -8,6 +8,14 @@
 
 .header--home::after {
   @media (min-width: $desktop-width) {
+    @include retina {
+      background-image: linear-gradient(
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("/img/cat-background-desktop@2x.jpg");
+    }
+
     content: "";
     position: absolute;
     top: 0;
