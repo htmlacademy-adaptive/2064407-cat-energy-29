@@ -76,6 +76,16 @@
   @media (min-width: $desktop-width) {
     margin: -80px auto 12px;
   }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__card-img img {
@@ -94,6 +104,16 @@
   @media (min-width: $tablet-width) {
     max-width: 155px;
     margin: 0 auto;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

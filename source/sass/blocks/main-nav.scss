@@ -80,6 +80,16 @@
     width: 202px;
     height: 59px;
   }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-nav__logo img {

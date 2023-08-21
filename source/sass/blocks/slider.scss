@@ -61,3 +61,43 @@
 .slider__item--after img {
   object-position: right;
 }
+
+.slider__change {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: 30;
+
+  width: 4px;
+
+  background-color: #666666;
+  border-radius: 2px;
+  transform: translateX(-50%);
+
+  fill: #ffffff;
+}
+
+.slider__change-pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  color: #666666;
+
+  background: #ffffff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.slider__change-pin svg {
+  fill: currentColor;
+}
