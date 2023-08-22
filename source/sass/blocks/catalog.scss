@@ -1,5 +1,5 @@
 .catalog {
-  @media (min-width: $mobile-only-width) {
+  @media (max-width: $mobile-only-width) {
     border-top: 1px solid #e6e6e6;
   }
 }
@@ -76,6 +76,16 @@
   @media (min-width: $desktop-width) {
     margin: -80px auto 12px;
   }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__card-img img {
@@ -94,6 +104,16 @@
   @media (min-width: $tablet-width) {
     max-width: 155px;
     margin: 0 auto;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -167,7 +187,7 @@
 .catalog__item--more::before {
   content: "";
   position: absolute;
-  top: 140px;
+  top: 50px;
   left: 50%;
 
   width: 30px;
@@ -176,6 +196,8 @@
   background-color: #d3d3d3;
 
   @media (min-width: $tablet-width) {
+    top: 145px;
+
     width: 60px;
   }
 }

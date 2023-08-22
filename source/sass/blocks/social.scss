@@ -2,8 +2,15 @@
   display: grid;
   justify-content: center;
   width: 132px;
+  width: 100%;
   margin: 0 auto;
+  margin-bottom: 11px;
   padding: 0;
+  padding-top: 20px;
+  padding-bottom: 19px;
+
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray;
 
   gap: 24px;
   grid-template-columns: repeat(3, auto);

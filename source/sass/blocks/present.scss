@@ -1,4 +1,10 @@
 .present {
+  @include retina {
+    background-image: url("/img/svg/present.svg"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("/img/present-background-mobile@2x.png");
+  }
+
   padding: 186px 58px 43px;
 
   font-size: 16px;
@@ -16,6 +22,12 @@
   background-size: 78px 80px, auto, cover;
 
   @media (min-width: $tablet-width) {
+    @include retina {
+      background-image: url(/img/svg/present.svg),
+        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url(/img/present-background-tablet@2x.jpg);
+    }
+
     padding: 71px 125px 69px 421px;
 
     text-align: left;

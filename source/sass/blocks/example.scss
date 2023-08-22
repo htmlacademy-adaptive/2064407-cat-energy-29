@@ -1,5 +1,5 @@
 .example {
-  padding: 27px 0 23px;
+  padding: 27px 0 39px;
 
   background-color: #eaeaea;
 
@@ -41,10 +41,10 @@
 }
 
 .example__title {
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 63px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,8 +53,6 @@
 }
 
 .example__text {
-  margin: 0;
-
   font-family: $ff-lato;
 
   @media (min-width: $tablet-width) {
@@ -66,7 +64,7 @@
   display: grid;
   padding-top: 6px;
 
-  gap: 27px 32px;
+  gap: 35px 32px;
   grid-template-columns: repeat(2, 124px);
 
   @media (min-width: $tablet-width) {
@@ -96,10 +94,12 @@
 
 .example__result-subtitle {
   display: block;
+  margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
 
   font-size: 24px;
+  line-height: 24px;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
@@ -112,7 +112,7 @@
 
 .example__result-text {
   position: absolute;
-  bottom: -26px;
+  bottom: -28px;
   left: 50%;
 
   align-items: center;
