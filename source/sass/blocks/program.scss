@@ -96,7 +96,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 74px;
     padding-left: 160px;
   }
 }
@@ -172,5 +172,11 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: 47%;
+    }
   }
 }
