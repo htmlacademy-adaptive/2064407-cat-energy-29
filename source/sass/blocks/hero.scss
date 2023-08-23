@@ -2,18 +2,10 @@
   position: relative;
 
   padding: 0 0 40px;
-
-  // @media (max-width: $mobile-only-width) {
-  //   border-top: 1px solid #e6e6e6;
-  // }
 }
 
 .hero--home {
   padding-bottom: 43px;
-
-  // @media (max-width: $mobile-only-width) {
-  //   padding: 0;
-  // }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
@@ -73,8 +65,16 @@
 }
 
 .hero--catalog {
+  padding-top: 5px;
+  padding-bottom: 35px;
+
   @media (max-width: $mobile-only-width) {
     border-top: 1px solid $gray;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 3px;
+    padding-bottom: 89px;
   }
 }
 
