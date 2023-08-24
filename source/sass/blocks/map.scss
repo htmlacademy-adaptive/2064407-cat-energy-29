@@ -17,7 +17,7 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 40px 60px;
+    padding: 61px 40px 58px;
 
     gap: 308px;
   }
@@ -28,11 +28,11 @@
     z-index: 1;
 
     width: 565px;
-    padding: 66px 79px 58px;
+    padding: 65px 58px 59px 80px;
 
     background-color: $light;
 
-    gap: 93px;
+    gap: 70px;
   }
 }
 
@@ -54,11 +54,11 @@
 .map__text {
   margin: 0;
 
-  line-height: 20px;
+  line-height: 19px;
   font-family: $ff-lato;
 
   @media (min-width: $tablet-width) {
-    font-size: 16px;
+    font-size: 17px;
     text-align: right;
   }
 

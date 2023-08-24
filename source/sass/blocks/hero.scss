@@ -76,10 +76,15 @@
     padding-top: 3px;
     padding-bottom: 89px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 54px;
+  }
 }
 
 .hero--catalog .hero__content {
   @media (max-width: $tablet-width) {
+    padding-top: 20px;
     padding-left: 0;
   }
 }

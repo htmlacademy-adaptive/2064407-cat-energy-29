@@ -1,5 +1,13 @@
 .more {
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 18px;
+  }
 }
 
 .more__title-main {
@@ -22,14 +30,21 @@
   @media (min-width: $desktop-width) {
     display: grid;
     align-items: start;
+    padding-top: 79px;
 
-    gap: 30px 80px;
+    gap: 30px 78px;
     grid-template-columns: 1fr auto;
   }
 }
 
 .more__list {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+
+    text-align: center;
+  }
 }
 
 .more__item {
@@ -42,20 +57,20 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 39px 28px;
+    padding: 25px 38px 27px;
 
-    border-top: 1px solid #cdcdcd;
+    border: 1px solid #cdcdcd;
 
-    gap: 25px 23px;
+    gap: 22px 21px;
     grid-template-columns: 1fr 150px 70px;
   }
 
   @media (min-width: $desktop-width) {
     align-items: baseline;
-    padding: 17px 0 15px;
+    padding: 17px 0 13px;
 
-    gap: 40px;
-    grid-template-columns: 1fr 220px 60px 244px;
+    gap: 22px;
+    grid-template-columns: 1fr 222px 60px 244px;
   }
 }
 
@@ -69,6 +84,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  text-align: start;
   color: #222222;
   text-transform: uppercase;
 
@@ -88,8 +104,9 @@
   }
 }
 
-.more__item p {
-  margin: 0;
+.more__item span {
+  padding-top: 3px;
+  padding-right: 2px;
 
   line-height: 14px;
   font-family: $ff-lato;
@@ -98,21 +115,33 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    text-align: right;
+    // vertical-align: bottom;
+    // text-align: right;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
+
     text-align: left;
+  }
+}
+
+.more-volume {
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
 
 .more__price {
   text-align: right;
+
+  @media (min-width: $desktop-width) {
+    text-align: right;
+  }
 }
 
 .more__button {
   width: 100%;
-  // margin-top: 15px;
   padding: 10px;
 
   font-size: 16px;
