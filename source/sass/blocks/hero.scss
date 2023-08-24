@@ -45,10 +45,14 @@
   }
 }
 
+.hero--form {
+  padding-bottom: 0;
+}
+
 .hero--form .hero__title {
   margin-bottom: 36px;
 
-  @media (max-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 55px;
   }
 }
@@ -62,6 +66,10 @@
     text-align: left;
     color: #000000;
   }
+}
+
+.hero--form .hero__content {
+  padding: 29px 0 16px;
 }
 
 .hero--catalog {

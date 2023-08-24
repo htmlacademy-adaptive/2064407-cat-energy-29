@@ -59,7 +59,7 @@
   }
 
   &--contacts {
-    padding: 25px 20px 19px;
+    padding: 25px 20px 17px;
 
     @media (min-width: $tablet-width) {
       padding: 41px 70px 35px;
@@ -95,7 +95,7 @@
   }
 
   &--submit {
-    padding: 15px 20px 16px;
+    padding: 15px 20px 17px;
 
     @media (min-width: $tablet-width) {
       display: grid;
@@ -145,6 +145,39 @@
   }
 }
 
+.title__page-other {
+  position: relative;
+
+  margin: 0 -20px;
+  overflow: hidden;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  font-family: $ff-oswald;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 -30px;
+    padding-left: 30px;
+
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 -102px 0 -110px;
+    padding-left: 70px;
+  }
+}
+
+.title__page-other span {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 37px;
+  }
+}
+
 .form__label {
   font-size: 16px;
   line-height: 18px;
@@ -184,7 +217,7 @@
   &--mail {
     background-image: url("/img/svg/email-icon.svg");
     background-repeat: no-repeat;
-    background-position: right 12px center;
+    background-position: right 11px center;
     background-size: 20px;
   }
 
@@ -226,16 +259,13 @@
 }
 
 .form__legend {
-  margin-bottom: 34px;
-
-  line-height: 27px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     margin: 3px -67px 70px -70px;
     padding-left: 28px;
 
     font-size: 36px;
-    line-height: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -246,7 +276,7 @@
 
 .form__legend span {
   display: inline-block;
-  max-width: 222px;
+  max-width: 227px;
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
@@ -262,7 +292,7 @@
 }
 
 .form__fieldset--commit .form__legend {
-  margin-bottom: 37px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
@@ -302,6 +332,10 @@ textarea.form__input {
 
 .form__submit {
   width: 100%;
+  padding: 10px;
+
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     max-width: 284px;
@@ -313,38 +347,5 @@ textarea.form__input {
 
   @media (min-width: $desktop-width) {
     max-width: 568px;
-  }
-}
-
-.title__page-other {
-  position: relative;
-
-  margin: 0 -20px;
-  overflow: hidden;
-
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
-  font-family: $ff-oswald;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 -30px;
-    padding-left: 30px;
-
-    font-size: 36px;
-    line-height: 46px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 -102px 0 -110px;
-    padding-left: 70px;
-  }
-}
-
-.title__page-other span {
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 37px;
   }
 }
