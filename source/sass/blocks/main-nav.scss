@@ -162,7 +162,7 @@
       content: "";
       position: absolute;
       right: 0;
-      bottom: 1px;
+      bottom: 2px;
       left: 0;
 
       height: 2px;
@@ -233,11 +233,14 @@
   border-top: 2px solid transparent;
 
   &::before {
+    left: 4px;
+
     transform: rotate(-46deg);
   }
 
   &::after {
     top: 6px;
+    left: 4px;
 
     transform: rotate(46deg);
   }

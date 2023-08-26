@@ -1,25 +1,39 @@
 .control {
   display: grid;
 
-  gap: 12px;
+  gap: 13px;
   grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    gap: 12px;
+  }
 
   &--radio {
     @media (min-width: $tablet-width) {
-      padding: 24px 28px;
+      padding: 21px 26px 25px;
 
       border: 1px solid $gray-border;
+
+      gap: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 25px;
+
+      gap: 13px;
     }
   }
 
   &--check {
+    gap: 12px;
+
     @media (min-width: $tablet-width) {
-      gap: 33px 57px;
+      gap: 33px 60px;
       grid-template-columns: repeat(2, 1fr);
     }
 
     @media (min-width: $desktop-width) {
-      gap: 33px 78px;
+      gap: 33px 80px;
       grid-template-columns: repeat(4, 1fr);
     }
   }
@@ -31,6 +45,10 @@
 
   gap: 15px;
   grid-template-columns: auto 1fr;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
 }
 
 .control__input {
@@ -55,6 +73,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 16px 16px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 24px 24px;
+    }
   }
 
   &[type="radio"] {
@@ -67,8 +89,8 @@
     top: 50%;
     left: 50%;
 
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
 
     background-color: $basic-gray;
     border-radius: 50%;

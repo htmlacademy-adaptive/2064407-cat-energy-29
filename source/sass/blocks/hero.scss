@@ -70,23 +70,32 @@
 
 .hero--form .hero__content {
   padding: 29px 0 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 0 24px 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 54px 0 20px;
+  }
 }
 
 .hero--catalog {
-  padding-top: 5px;
+  padding-top: 7px;
   padding-bottom: 35px;
 
   @media (max-width: $mobile-only-width) {
     border-top: 1px solid $gray;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 3px;
     padding-bottom: 89px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 54px;
+    padding-bottom: 35px;
   }
 }
 
@@ -133,7 +142,7 @@
 
   @media (min-width: $desktop-width) {
     width: 545px;
-    padding: 90px 20px 10px 50px;
+    padding: 90px 20px 10px 49px;
   }
 }
 
@@ -160,7 +169,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 53px;
+    margin-bottom: 52px;
   }
 }
 
@@ -169,11 +178,15 @@
 
   line-height: 18px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     max-width: 390px;
     margin-bottom: 20px;
 
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
   }
 }
 
@@ -197,7 +210,7 @@
 
     width: 552px;
     height: 499px;
-    margin: 10px 0 0 -129px;
+    margin: 9px 0 1px -129px;
   }
 }
 
@@ -217,7 +230,7 @@
 
   width: 100%;
   max-width: 280px;
-  padding-top: 9px;
+  padding-top: 10px;
   padding-bottom: 10px;
 
   font-size: 16px;
