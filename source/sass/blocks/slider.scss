@@ -63,7 +63,6 @@
 }
 
 .slider__change {
-  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -72,11 +71,25 @@
 
   width: 4px;
 
+  color: #666666;
+
   background-color: #666666;
   border-radius: 2px;
   transform: translateX(-50%);
 
-  fill: #ffffff;
+  &:hover,
+  &:focus-within {
+    color: $green;
+
+    background-color: $green;
+  }
+
+  &:active {
+    color: $dark-green;
+
+    background-color: $dark-green;
+    opacity: 0.6;
+  }
 }
 
 .slider__change-pin {
@@ -89,15 +102,13 @@
   width: 40px;
   height: 40px;
 
-  color: #666666;
+  color: currentColor;
 
   background: #ffffff;
-  border: 2px solid #666666;
+  border: 2px solid currentColor;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-}
 
-.slider__change-pin svg {
   fill: currentColor;
 }

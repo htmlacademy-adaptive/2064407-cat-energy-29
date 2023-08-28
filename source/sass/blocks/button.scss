@@ -17,7 +17,8 @@
   cursor: pointer;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:focus-visible {
     background-color: $dark-green;
   }
 
@@ -25,5 +26,14 @@
     color: rgba(255, 255, 255, 0.3);
 
     background-color: $dark-green;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #bababa;
+
+    pointer-events: none;
   }
 }

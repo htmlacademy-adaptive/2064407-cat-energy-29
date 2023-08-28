@@ -225,6 +225,15 @@
   @media (min-width: $tablet-width) {
     margin-top: 10px;
   }
+
+  &:disabled,
+  &--disabled {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #bababa;
+
+    pointer-events: none;
+  }
 }
 
 .catalog__item--more {
@@ -341,5 +350,14 @@
     color: rgba(68, 68, 68, 0.3);
 
     background-color: #ebebeb;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #bababa;
+
+    pointer-events: none;
   }
 }
