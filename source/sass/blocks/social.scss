@@ -14,6 +14,12 @@
 
   gap: 24px;
   grid-template-columns: repeat(3, auto);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 32px;
+
+    border: none;
+  }
 }
 
 .social__link {

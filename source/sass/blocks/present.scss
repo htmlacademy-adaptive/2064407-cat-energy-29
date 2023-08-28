@@ -5,7 +5,7 @@
       url("/img/present-background-mobile@2x.png");
   }
 
-  padding: 186px 58px 43px;
+  padding: 186px 59px 44px 57px;
 
   font-size: 16px;
   line-height: 20px;
@@ -37,19 +37,23 @@
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       url(/img/present-background-tablet.jpg);
     background-repeat: no-repeat;
-    background-position: center left 80px, top, center;
+    background-position: top 58px left 79px, top, center;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    padding: 185px 42px 43px;
+    padding: 187px 17px 41px;
 
     text-align: center;
 
-    background-position: top 59px center, top, top;
+    background-position: top 58px center, top, top;
   }
 }
 
 .present p {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    // padding-bottom: 4px;
+  }
 }

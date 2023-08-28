@@ -9,13 +9,15 @@
   @media (min-width: $tablet-width) {
     display: grid;
     align-items: start;
-    padding: 21px 31px 44px;
+    padding: 21px 31px 43px;
 
     gap: 20px;
     grid-template-columns: auto 1fr;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 52px 0 20px;
+
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -41,13 +43,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    margin: 8px 4px 0 0;
+    margin: 8px 3px 0 0;
 
     background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 12px;
+    margin: 17px 0 0 0;
   }
 }
 
@@ -68,16 +70,20 @@
   display: block;
   width: 191px;
   height: 38px;
-  padding-top: 5px;
+  margin-top: 13px;
+  margin-left: 19px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
-    height: 52px;
+    height: 50px;
+    margin-top: 3px;
+    margin-left: -1px;
   }
 
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
+    margin-left: -1px;
   }
 
   &:hover,
@@ -95,6 +101,20 @@
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.main-nav__item {
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 34px;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 35px;
+  }
 }
 
 .main-nav__link {
@@ -142,13 +162,17 @@
       content: "";
       position: absolute;
       right: 0;
-      bottom: 0;
+      bottom: 2px;
       left: 0;
 
       height: 2px;
 
       background-color: $basic-gray;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 41px;
   }
 }
 
@@ -209,11 +233,14 @@
   border-top: 2px solid transparent;
 
   &::before {
+    left: 4px;
+
     transform: rotate(-46deg);
   }
 
   &::after {
     top: 6px;
+    left: 4px;
 
     transform: rotate(46deg);
   }
@@ -229,14 +256,4 @@
 
 .is-open .main-nav__list {
   display: flex;
-}
-
-.main-nav__item {
-  border-top: 1px solid #e6e6e6;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 34px;
-
-    border: none;
-  }
 }

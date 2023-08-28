@@ -4,14 +4,14 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
-    padding-bottom: 60px;
+    padding-bottom: 57px;
 
     border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 70px;
-    padding-bottom: 83px;
+    padding-bottom: 82px;
 
     border: none;
   }
@@ -21,7 +21,11 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 58px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
   }
 }
 
@@ -31,7 +35,7 @@
 
     counter-reset: number;
 
-    gap: 77px 60px;
+    gap: 76px 60px;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -51,7 +55,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    padding: 123px 75px 45px 0;
+    padding: 124px 75px 45px 0;
 
     font-size: 16px;
     line-height: 24px;
@@ -82,6 +86,10 @@
       width: 80px;
       height: 80px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 13px;
+    }
   }
 
   &--beneficial::before {
@@ -105,16 +113,23 @@
       content: counter(number);
       position: absolute;
       top: 0;
-      left: 115px;
+      top: -28px;
+      left: 112px;
       z-index: -1;
 
       margin: 0;
 
       font-size: 280px;
-      line-height: 226px;
+      line-height: 280px;
       font-family: $ff-oswald;
       color: #f2f2f2;
     }
+  }
+}
+
+.advantages__item:first-child::after {
+  @media (min-width: $tablet-width) {
+    left: 117px;
   }
 }
 
