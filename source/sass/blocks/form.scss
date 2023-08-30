@@ -259,20 +259,6 @@
     line-height: 30px;
   }
 
-  // &--mail {
-  //   background-image: url("/img/svg/email-icon.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: right 13px center;
-  //   background-size: 20px;
-  // }
-
-  // &--phone {
-  //   background-image: url("/img/svg/phone-icon.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: right 12px center;
-  //   background-size: 20px;
-  // }
-
   &:hover {
     border-color: $light-gray;
   }
@@ -290,8 +276,8 @@
   }
 
   &--valid {
-    border-color: #5eaa2f;
-    box-shadow: 0 0 0 1px #5eaa2f;
+    border-color: $dark-green;
+    box-shadow: 0 0 0 1px $dark-green;
   }
 
   &:disabled {
