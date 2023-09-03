@@ -119,8 +119,8 @@
 
 .example__result-text {
   position: absolute;
-  bottom: -28px;
-  left: 50%;
+  bottom: -29px;
+  left: 49%;
 
   align-items: center;
   padding: 0 17px;
@@ -135,6 +135,7 @@
 
   @media (min-width: $tablet-width) {
     bottom: -21px;
+    left: 50%;
 
     width: max-content;
     padding: 0 7px;
@@ -146,6 +147,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0 9px;
+
     background-color: #f2f2f2;
   }
 }

@@ -4,8 +4,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 47px;
+    padding-bottom: 48px;
   }
+}
+
+.main-nav__list-form .main-nav__item {
+  margin: 0 0 0 34px;
 }
 
 .form__container {
@@ -202,7 +206,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    right: 14px;
+    right: 0;
 
     width: 40px;
     height: 20px;
@@ -213,6 +217,10 @@
     mask-position: right 12px center;
     mask-repeat: no-repeat;
     mask-size: 20px 20px;
+
+    @media (min-width: $desktop-width) {
+      right: 3px;
+    }
   }
 
   &--mail::after {
@@ -287,17 +295,18 @@
 }
 
 .form__legend {
-  margin-bottom: 36px;
+  margin-bottom: 31px;
+  padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
-    margin: 3px -67px 71px -70px;
+    margin: 3px -67px 67px -70px;
     padding-left: 28px;
 
     font-size: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 3px -100px 70px -110px;
+    margin: 3px -100px 66px -110px;
     padding-left: 70px;
   }
 }
@@ -319,29 +328,33 @@
 .form__legend::after,
 .form__legend::before {
   @media (min-width: $tablet-width) {
-    top: 28px;
+    top: 27px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 27px;
+    top: 26px;
   }
 }
 
 .form__fieldset--commit .form__legend {
-  margin-bottom: 39px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 83px;
+    margin-bottom: 77px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 72px;
+    margin-bottom: 67px;
   }
 }
 
 .form__fieldset--check .form__legend {
   @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
   }
 }
 
