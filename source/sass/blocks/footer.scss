@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     align-items: center;
-    padding-top: 32px;
+    padding-top: 31px;
     padding-bottom: 55px;
 
     grid-template-columns: 1fr 140px 1fr;
@@ -66,12 +66,16 @@
   align-items: center;
 
   fill: currentColor;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__logo-htmlacademy svg {
   &:hover,
   &:focus {
-    color: #68b738;
+    color: $green;
 
     outline: none;
   }
