@@ -86,15 +86,27 @@
   &[type="radio"]:checked::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
 
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
 
     background-color: $basic-gray;
     border-radius: 50%;
     transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      top: 52%;
+
+      width: 18px;
+      height: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 51%;
+      left: 52%;
+    }
   }
 
   &:hover,
