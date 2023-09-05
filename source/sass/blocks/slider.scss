@@ -8,6 +8,11 @@
   @media (min-width: $tablet-width) {
     max-width: 560px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 560px;
+    margin-top: 2px;
+  }
 }
 
 .slider__img-container {

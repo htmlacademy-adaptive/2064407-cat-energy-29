@@ -76,7 +76,7 @@
     padding: 5px 20px 8px;
 
     @media (min-width: $tablet-width) {
-      padding: 22px 70px 31px;
+      padding: 22px 70px 34px;
     }
 
     @media (min-width: $desktop-width) {
@@ -88,7 +88,7 @@
     padding: 11px 20px 19px;
 
     @media (min-width: $tablet-width) {
-      padding: 21px 70px 18px;
+      padding: 19px 70px 18px;
     }
 
     @media (min-width: $desktop-width) {
@@ -97,12 +97,12 @@
   }
 
   &--submit {
-    padding: 15px 20px 17px;
+    padding: 16px 20px 17px;
 
     @media (min-width: $tablet-width) {
       display: grid;
       align-items: center;
-      padding: 33px 70px 19px;
+      padding: 34px 70px 19px;
 
       gap: 61px;
       grid-template-columns: repeat(2, 1fr);
@@ -181,6 +181,9 @@
 }
 
 .form__label {
+  align-self: center;
+  padding-bottom: 3px;
+
   font-size: 16px;
   line-height: 18px;
   font-family: $ff-oswald;
@@ -200,7 +203,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    right: 0;
+    right: -3px;
 
     width: 40px;
     height: 20px;
@@ -213,7 +216,7 @@
     mask-size: 20px 20px;
 
     @media (min-width: $desktop-width) {
-      right: 3px;
+      right: 0;
     }
   }
 
@@ -344,11 +347,11 @@
 
 .form__fieldset--check .form__legend {
   @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 47px;
   }
 }
 
@@ -361,6 +364,10 @@ textarea.form__input {
   @media (min-width: $tablet-width) {
     height: 175px;
     padding: 10px 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 19px;
   }
 }
 
