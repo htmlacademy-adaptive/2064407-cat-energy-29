@@ -146,6 +146,11 @@
     line-height: 30px;
   }
 
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -163,7 +168,8 @@
   }
 
   &:hover::after,
-  &:focus::after {
+  &:focus::after,
+  &:focus-visible::after {
     background-image: url("/img/svg/arrow-focus.svg");
     background-repeat: no-repeat;
     background-position: left center;

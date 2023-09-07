@@ -229,6 +229,17 @@
   &::after {
     bottom: 0;
   }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .is-open .main-nav__toggle {
