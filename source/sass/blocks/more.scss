@@ -47,6 +47,10 @@
 
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .more__item {
@@ -61,13 +65,13 @@
   @media (min-width: $tablet-width) {
     padding: 25px 38px 27px;
 
-    gap: 22px 21px;
+    gap: 23px 21px;
     grid-template-columns: 1fr 150px 70px;
   }
 
   @media (min-width: $desktop-width) {
     align-items: baseline;
-    padding: 16px 0 14px;
+    padding: 16px 0 15px;
 
     gap: 22px;
     grid-template-columns: 1fr 222px 60px 244px;

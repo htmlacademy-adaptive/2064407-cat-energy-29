@@ -7,7 +7,6 @@
   grid-template-columns: repeat(2, auto);
 
   @media (min-width: $tablet-width) {
-    display: grid;
     align-items: start;
     padding: 21px 31px 43px;
 
@@ -55,15 +54,22 @@
 
 .main-nav.is-open .main-nav__list {
   display: flex;
-  min-height: 198px;
 
   text-align: center;
+
+  @media (max-width: $mobile-only-width) {
+    min-height: 198px;
+  }
 }
 
 .no-js .main-nav__list {
   position: static;
 
   display: block;
+
+  @media (max-width: $mobile-only-width) {
+    margin-top: 15px;
+  }
 }
 
 .main-nav__logo {
@@ -265,6 +271,10 @@
 
 .no-js .main-nav {
   position: static;
+
+  @media (max-width: $mobile-only-width) {
+    display: block;
+  }
 }
 
 .is-open .main-nav__list {

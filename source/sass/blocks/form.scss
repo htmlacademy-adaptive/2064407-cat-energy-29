@@ -9,7 +9,11 @@
 }
 
 .main-nav__list-form .main-nav__item {
-  margin: 0 0 0 34px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 34px;
+  }
 }
 
 .form__container {
