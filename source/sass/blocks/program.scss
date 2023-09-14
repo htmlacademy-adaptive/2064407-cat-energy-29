@@ -88,7 +88,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     padding-left: 0;
 
     font-size: 36px;
@@ -97,7 +97,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 73px;
-    padding-left: 160px;
+    padding-left: 161px;
   }
 }
 
@@ -113,7 +113,7 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 31px;
+    padding-bottom: 32px;
 
     font-size: 16px;
     line-height: 24px;
@@ -146,6 +146,11 @@
     line-height: 30px;
   }
 
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -163,7 +168,8 @@
   }
 
   &:hover::after,
-  &:focus::after {
+  &:focus::after,
+  &:focus-visible::after {
     background-image: url("/img/svg/arrow-focus.svg");
     background-repeat: no-repeat;
     background-position: left center;

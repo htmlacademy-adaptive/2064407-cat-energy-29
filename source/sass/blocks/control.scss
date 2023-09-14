@@ -28,7 +28,7 @@
     gap: 12px;
 
     @media (min-width: $tablet-width) {
-      gap: 33px 60px;
+      gap: 32px 60px;
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -109,8 +109,15 @@
     }
   }
 
+  &:focus,
+  &:focus-visible {
+    background-color: #444444;
+    outline: none;
+    box-shadow: 0 0 0 1px #444444;
+  }
+
   &:hover,
-  &:focus {
+  &:active {
     border-color: #bababa;
   }
 

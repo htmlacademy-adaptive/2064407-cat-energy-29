@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CAT ENERGY</title>
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/latoregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="icon" sizes="32x32" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="icon" href="img/favicons/android.png" type="image/png">
@@ -17,7 +19,8 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container container">
-        <nav class="header__nav main-nav">
+        <!--Удалить класс is-open для свернутого состояния меню в мобильной версии-->
+        <nav class="header__nav main-nav is-open">
           <a class="main-nav__logo logo" href="index.html">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/svg/logo-desktop.svg">

@@ -47,10 +47,14 @@
 
 .hero--form {
   padding-bottom: 0;
+
+  @media (max-width: $mobile-only-width) {
+    border-top: 1px solid #d9d9d9;
+  }
 }
 
 .hero--form .hero__title {
-  margin-bottom: 36px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
@@ -69,7 +73,7 @@
 }
 
 .hero--form .hero__content {
-  padding: 28px 0 17px;
+  padding: 28px 0 16px;
 
   @media (min-width: $tablet-width) {
     padding: 23px 0 24px 39px;

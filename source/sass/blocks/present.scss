@@ -28,7 +28,7 @@
         url(/img/present-background-tablet@2x.jpg);
     }
 
-    padding: 71px 125px 69px 421px;
+    padding: 70px 125px 69px 421px;
 
     text-align: left;
 
@@ -37,12 +37,12 @@
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       url(/img/present-background-tablet.jpg);
     background-repeat: no-repeat;
-    background-position: top 58px left 79px, top, center;
+    background-position: top 57px left 79px, top, center;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    padding: 187px 17px 41px;
+    padding: 186px 17px 43px;
 
     text-align: center;
 
@@ -52,8 +52,4 @@
 
 .present p {
   margin: 0;
-
-  @media (min-width: $tablet-width) {
-    // padding-bottom: 4px;
-  }
 }
