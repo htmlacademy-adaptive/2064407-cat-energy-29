@@ -40,8 +40,12 @@
 .hero--home .hero__title {
   margin-bottom: 25px;
 
+  color: $light;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
+
+    color: #000000;
   }
 }
 
@@ -147,14 +151,6 @@
   @media (min-width: $desktop-width) {
     width: 545px;
     padding: 90px 20px 10px 49px;
-  }
-}
-
-.hero--home .hero__title {
-  color: $light;
-
-  @media (min-width: $tablet-width) {
-    color: #000000;
   }
 }
 

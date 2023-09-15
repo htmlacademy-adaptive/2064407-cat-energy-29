@@ -32,8 +32,8 @@
   }
 }
 
-.title-lines:before,
-.title-lines:after {
+.title-lines::before,
+.title-lines::after {
   content: "";
   position: absolute;
   top: 17px;
@@ -51,7 +51,7 @@
   }
 }
 
-.title-lines:before {
+.title-lines::before {
   display: none;
   margin-left: -100%;
 
@@ -60,6 +60,6 @@
   }
 }
 
-.title-lines:after {
+.title-lines::after {
   margin-right: -100%;
 }
