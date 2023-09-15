@@ -1,4 +1,4 @@
-.footer__social {
+.social__footer {
   display: grid;
   justify-content: center;
   width: 132px;
@@ -47,19 +47,4 @@
 
 .social__link svg {
   fill: currentColor;
-}
-
-.footer__logo-htmlacademy {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  font-size: 16px;
-  line-height: 18px;
-  font-family: $ff-lato;
-  color: $dark-gray;
-
-  @media (min-width: $tablet-width) {
-    margin-left: auto;
-  }
 }

@@ -81,8 +81,23 @@
   }
 }
 
-.htmlacademy-text {
+.footer__htmlacademy-text {
   padding-right: 23px;
 
   line-height: 20px;
+}
+
+.footer__logo-htmlacademy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $ff-lato;
+  color: $dark-gray;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
 }

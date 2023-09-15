@@ -8,14 +8,6 @@
   }
 }
 
-.main-nav__list-form .main-nav__item {
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 0 34px;
-  }
-}
-
 .form__container {
   @media (min-width: $desktop-width) {
     display: grid;
@@ -151,7 +143,7 @@
   }
 }
 
-.title__page-other {
+.form__title-page {
   position: relative;
 
   margin: 0 -20px;
@@ -176,7 +168,7 @@
   }
 }
 
-.title__page-other span {
+.form__title-page span {
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
