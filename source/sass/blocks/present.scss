@@ -23,9 +23,9 @@
 
   @media (min-width: $tablet-width) {
     @include retina {
-      background-image: url(/img/svg/present.svg),
+      background-image: url("/img/svg/present.svg"),
         linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-        url(/img/present-background-tablet@2x.jpg);
+        url("/img/present-background-tablet@2x.jpg");
     }
 
     padding: 70px 125px 69px 421px;
@@ -33,9 +33,9 @@
     text-align: left;
 
     background-color: #69b738;
-    background-image: url(/img/svg/present.svg),
+    background-image: url("/img/svg/present.svg"),
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url(/img/present-background-tablet.jpg);
+      url("/img/present-background-tablet.jpg");
     background-repeat: no-repeat;
     background-position: top 57px left 79px, top, center;
   }

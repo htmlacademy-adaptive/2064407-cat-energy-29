@@ -113,7 +113,6 @@
     @media (min-width: $tablet-width) {
       content: counter(number);
       position: absolute;
-      top: 0;
       top: -28px;
       left: 112px;
       z-index: -1;
