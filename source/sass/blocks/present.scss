@@ -1,0 +1,55 @@
+.present {
+  @include retina {
+    background-image: url("/img/svg/present.svg"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("/img/present-background-mobile@2x.png");
+  }
+
+  padding: 186px 59px 44px 57px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $ff-lato;
+  text-align: center;
+  color: $light;
+
+  background-color: #69b738;
+  background-image: url("/img/svg/present.svg"),
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("/img/present-background-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top 59px center, top, top;
+  background-size: 78px 80px, auto, cover;
+
+  @media (min-width: $tablet-width) {
+    @include retina {
+      background-image: url("/img/svg/present.svg"),
+        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("/img/present-background-tablet@2x.jpg");
+    }
+
+    padding: 70px 125px 69px 421px;
+
+    text-align: left;
+
+    background-color: #69b738;
+    background-image: url("/img/svg/present.svg"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("/img/present-background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: top 57px left 79px, top, center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding: 186px 17px 43px;
+
+    text-align: center;
+
+    background-position: top 58px center, top, top;
+  }
+}
+
+.present p {
+  margin: 0;
+}

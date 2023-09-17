@@ -1,0 +1,40 @@
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 8px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $ff-oswald;
+  text-align: center;
+  color: $light;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $green;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: $dark-green;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: $dark-green;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #bababa;
+
+    pointer-events: none;
+  }
+}

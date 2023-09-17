@@ -1,0 +1,162 @@
+.more {
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 18px;
+  }
+}
+
+.more__title-main {
+  font-weight: 400;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.more__block {
+  padding-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    align-items: start;
+    padding-top: 74px;
+
+    gap: 30px 79px;
+    grid-template-columns: 1fr auto;
+  }
+}
+
+.more__list {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.more__item {
+  display: grid;
+  padding: 13px 0 19px;
+
+  border-top: 1px solid #cdcdcd;
+
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 38px 27px;
+
+    gap: 23px 21px;
+    grid-template-columns: 1fr 150px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: baseline;
+    padding: 16px 0 15px;
+
+    gap: 22px;
+    grid-template-columns: 1fr 222px 60px 244px;
+  }
+}
+
+.more__item:last-child {
+  border-bottom: 1px solid $light-gray;
+}
+
+.more__title {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: start;
+  color: #222222;
+  text-transform: uppercase;
+
+  grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    grid-column: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.more__item span {
+  padding-top: 1px;
+  padding-right: 2px;
+
+  line-height: 14px;
+  font-family: $ff-lato;
+  color: $dark-gray;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    // vertical-align: bottom;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+
+    text-align: left;
+  }
+}
+
+.more__volume {
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}
+
+.more__price {
+  text-align: right;
+
+  @media (min-width: $desktop-width) {
+    text-align: right;
+  }
+}
+
+.more__button {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+
+  font-size: 16px;
+  line-height: 20px;
+
+  grid-column: 1 / -1;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+
+    grid-column: auto;
+  }
+}
