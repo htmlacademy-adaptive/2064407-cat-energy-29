@@ -63,12 +63,13 @@
 }
 
 .no-js .main-nav__list {
-  position: static;
-
-  display: block;
-
   @media (max-width: $mobile-only-width) {
+    position: static;
+
+    display: block;
     margin-top: 15px;
+
+    grid-column: 1/-1;
   }
 }
 
@@ -261,18 +262,10 @@
   }
 }
 
-.no-js .main-nav__toggle {
-  display: none;
-}
-
-.no-js .main-nav {
-  position: static;
-
-  @media (max-width: $mobile-only-width) {
-    display: block;
-  }
-}
-
 .is-open .main-nav__list {
   display: flex;
+}
+
+.no-js .main-nav__toggle {
+  display: none;
 }
